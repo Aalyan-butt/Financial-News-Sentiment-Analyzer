@@ -92,7 +92,7 @@ Evaluation metrics include:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Aalyan-butt/Movie-Review-Sentiment-Analyzer
+git clone https://github.com/Aalyan-butt/Financial-News-Sentiment-Analyzer
 cd financial-news-sentiment-analyzer
 ```
 
