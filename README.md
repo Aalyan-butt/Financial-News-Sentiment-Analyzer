@@ -47,9 +47,8 @@ financial-news-sentiment-analyzer/
 ├── models/                 # Saved machine learning models
 ├── app/                    # Streamlit or Flask app
 ├── main.py                 # Script for training and evaluating model
-├── requirements.txt        # Python dependencies
 ├── README.md               # Project documentation
-└── LICENSE                 # Project license
+
 ```
 
 ---
