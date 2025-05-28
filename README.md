@@ -1,34 +1,159 @@
-# Stock News Sentiment Analyzer
+# 💰 Financial News Sentiment Analyzer
 
-A Streamlit application that analyzes sentiment of stock news articles.
+<p align="center">
+  <b>📈 NLP | 📰 Financial News | 💬 Sentiment Analysis | 🐍 Python</b><br><br>
+  Analyze financial news headlines and classify their sentiment as <strong>Positive</strong>, <strong>Negative</strong>, or <strong>Neutral</strong>.
+</p>
 
-## Features
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square">
+  <img src="https://img.shields.io/badge/NLP-Scikit--learn-yellow?logo=scikit-learn">
+  <img src="https://img.shields.io/badge/UI-Streamlit-red?logo=streamlit">
+</p>
 
-- Search for news articles by stock ticker symbol
-- Sentiment analysis of news article headlines and full text
-- Combined sentiment analysis across all articles
-- Interactive UI with expandable article details
+---
 
-## Project Structure
+## 🚀 Project Overview
 
-- `main.py`: Entry point for the application
-- `config.py`: Configuration and session state management
-- `ui.py`: User interface components
-- `data.py`: Data collection and processing functions
-- `sentiment.py`: Sentiment analysis tools
-- `scraper.py`: Web scraping utilities
+The **Financial News Sentiment Analyzer** uses **natural language processing (NLP)** techniques to determine the sentiment of financial news headlines. This helps traders, investors, and analysts gauge market mood from textual data.
 
-## Requirements
+The system classifies each headline into one of three categories:
 
-- Python 3.7+
-- Streamlit
-- TextBlob
-- yfinance
-- pandas
-- requests
-- BeautifulSoup4
+* ✅ **Positive**
+* ⚠️ **Neutral**
+* ❌ **Negative**
 
-## Installation
+---
+
+## 🧠 Features
+
+✅ Clean and preprocess financial news text
+✅ Apply feature extraction (TF-IDF or word embeddings)
+✅ Train classifiers (Logistic Regression, Naïve Bayes, or SVM)
+✅ Multiclass sentiment prediction
+✅ Model evaluation using accuracy, F1-score, and confusion matrix
+✅ (Optional) Live prediction interface with Streamlit
+
+---
+
+## 📁 Project Structure
+
+```
+financial-news-sentiment-analyzer/
+│
+├── data/                   # Raw and preprocessed datasets
+├── notebooks/              # Jupyter notebooks for EDA & modeling
+├── models/                 # Saved machine learning models
+├── app/                    # Streamlit or Flask app
+├── main.py                 # Script for training and evaluating model
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
+└── LICENSE                 # Project license
+```
+
+---
+
+## 📰 Dataset
+
+📚 **Financial PhraseBank** (or similar curated dataset)
+
+* Labeled financial news headlines
+* Sentiment categories: Positive, Negative, Neutral
+* Suitable for real-world financial sentiment tasks
+
+🔗 [Example Dataset on Kaggle](https://www.kaggle.com/datasets/sbhatti/financial-sentiment-analysis)
+
+---
+
+## ⚙️ Tech Stack
+
+| Tool              | Purpose                                     |
+| ----------------- | ------------------------------------------- |
+| 🐍 Python         | Main programming language                   |
+| 🧪 Scikit-learn   | ML algorithms and preprocessing             |
+| 🭹 NLTK / spaCy   | NLP preprocessing (tokenization, stopwords) |
+| 📊 Pandas / NumPy | Data manipulation and analysis              |
+| 🌐 Streamlit      | Optional web app interface                  |
+
+---
+
+## 📈 Model Evaluation
+
+Evaluation metrics include:
+
+* 🌟 **Accuracy**: Overall correctness
+* ▰️ **F1-Score (Macro)**: Balanced performance across all sentiment classes
+* 📊 **Confusion Matrix**: Visual insight into class-wise prediction quality
+
+---
+
+## 🛠️ Installation & Setup
+
+### 1. Clone the Repository
 
 ```bash
-pip install streamlit textblob yfinance pandas requests beautifulsoup4
+git clone https://github.com/your-username/financial-news-sentiment-analyzer.git
+cd financial-news-sentiment-analyzer
+```
+
+### 2. Create and Activate Virtual Environment
+
+```bash
+python -m venv venv
+source venv/bin/activate      # Windows: venv\Scripts\activate
+```
+
+
+
+### 3. Train and Evaluate the Model
+
+```bash
+python main.py
+```
+
+### 4. (Optional) Launch Streamlit App
+
+```bash
+streamlit run app/app.py
+```
+
+---
+
+## 💡 Example Usage
+
+> **Input:** "Apple's quarterly revenue beats Wall Street expectations"
+> **Predicted Sentiment:** ✅ Positive
+
+> **Input:** "Inflation fears drag down global stock markets"
+> **Predicted Sentiment:** ❌ Negative
+
+---
+
+## 🎯 Future Improvements
+
+* [ ] Integrate deep learning (LSTM, BERT) for better context awareness
+* [ ] Real-time financial news feed integration
+* [ ] Sentiment-based stock prediction model
+* [ ] Dashboard with interactive charts and visualizations
+
+---
+
+
+
+## 🙌 Acknowledgments
+
+* Financial PhraseBank Dataset
+* Scikit-learn, NLTK, spaCy
+* Streamlit team for easy deployment tools
+* Kaggle community for shared datasets
+
+---
+
+## 👤 Author
+
+**Aalyan Riasat**
+📧 [aalyanriasatali@gmail.com](mailto:your.email@example.com)
+🔗  • [GitHub](https://github.com/Aalyan-butt)
+
+---
